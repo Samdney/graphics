@@ -1,0 +1,61 @@
+\documentclass{amsart}
+\usepackage{comment}
+\usepackage{graphicx}
+\usepackage{url}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{xca}[theorem]{Exercise}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+% Absolute value notation
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+% Blank box placeholder for figures (to avoid requiring any
+% particular graphics capabilities for printing this document).
+\newcommand{\blankbox}[2]{%
+  \parbox{\columnwidth}{\centering
+%    Set fboxsep to 0 so that the actual size of the box will match the
+%    given measurements more closely.
+    \setlength{\fboxsep}{0pt}%
+    \fbox{\raisebox{0pt}[#2]{\hspace{#1}}}%
+  }%
+}
+% ======================================================================
+\begin{document}
+
+\title{Example}
+\maketitle
+
+Oho
+
+\[
+	\int_{a}^{b} 3x \, \mathrm{d}x
+\]
+
+an other equation
+
+\begin{equation}
+	\prod_{i} a_{i}
+\end{equation}
+
+or this one
+
+\begin{definition}[Cat]
+	Cute and likes mice.
+\end{definition}
+
+\begin{center}
+	Dog
+\end{center}
+
+\end{document}
+% ======================================================================
